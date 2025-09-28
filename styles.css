@@ -1,0 +1,8 @@
+body { font-family: sans-serif; margin: 1rem; }
+#controls label { margin-right: 1rem; }
+#results { width:100%; border-collapse: collapse; margin-top:1rem; }
+#results th, #results td { border:1px solid #ccc; padding:5px; text-align:center; }
+.crit { color:red; font-weight:bold; }
+.fumble { color:gray; font-weight:bold; }
+#settingsModal { position:fixed; top:20%; left:30%; background:#fff; padding:1rem; border:1px solid #666; }
+.hidden { display:none; }
