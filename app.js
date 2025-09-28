@@ -1,4 +1,4 @@
-const SHEET_API = 'YOUR_GAS_WEBAPP_URL';
+const SHEET_API = 'https://script.google.com/macros/s/AKfycbyrNAcNgZvXEgH5VDFLXFnYjo8LMlupJ0CI2YySqHtns4mOwf80DQNyEIf1yVfjNShm/exec';
 let attacks = [], settings = {};
 
 async function fetchAttacks() {
@@ -87,4 +87,5 @@ document.getElementById('saveSettings').onclick = saveSettings;
 window.onload = async () => {
   await fetchAttacks();
   await fetchSettings();
+
 };
