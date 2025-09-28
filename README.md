@@ -4,7 +4,7 @@ A static HTML/CSS/JS web app that lets you roll damage for D&D attacks.
 Data is stored in Google Sheets via a simple Apps Script backend, and the UI is hosted on GitHub Pages.
 
 ## Live Demo
-https://<your-username>.github.io/dnd-damage-roller/
+https://<your-username>.github.io/atkroller/
 
 ## Files
 - `index.html` – the main page
