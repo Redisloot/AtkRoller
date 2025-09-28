@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>D&D Damage Roller</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D&amp;D Damage Roller</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,22 +19,59 @@
     </label>
     <button id="rollBtn">Roll Damage</button>
     <button id="settingsBtn">Settings</button>
+    <button id="editAttacksBtn">Attack Editor</button>
   </div>
+
   <table id="results">
-    <thead><tr><th>Roll</th><th>Hit?</th><th>Damage</th></tr></thead>
+    <thead>
+      <tr><th>Roll</th><th>Hit?</th><th>Damage</th></tr>
+    </thead>
     <tbody></tbody>
   </table>
+
   <div id="total">Total Damage: 0</div>
 
-  <!-- Settings modal -->
-  <div id="settingsModal" class="hidden">
+  <!-- Settings Modal -->
+  <div id="settingsModal" class="hidden modal">
+    <h2>Settings</h2>
     <label><input id="doubleMod" type="checkbox"> Double Mod on Crit?</label>
     <label>Crit ≥ <input id="critThreshold" type="number" min="1" max="20"></label>
-    <label>BG Color: <input id="bgColor" type="text"></label>
-    <label>Button Color: <input id="btnColor" type="text"></label>
-    <label>Text Color: <input id="txtColor" type="text"></label>
-    <button id="saveSettings">Save</button>
-    <button id="closeSettings">Close</button>
+    <label>Background Color:
+      <select id="bgColor"></select>
+    </label>
+    <label>Button Color:
+      <select id="btnColor"></select>
+    </label>
+    <label>Text Color:
+      <select id="txtColor"></select>
+    </label>
+    <div class="modal-buttons">
+      <button id="saveSettings">Save</button>
+      <button id="closeSettings">Close</button>
+    </div>
+  </div>
+
+  <!-- Attack Editor Modal -->
+  <div id="editorModal" class="hidden modal">
+    <h2>Attack Editor</h2>
+    <table id="editorTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Damage Type</th>
+          <th>To Hit</th>
+          <th># Dice</th>
+          <th>Die Type</th>
+          <th>Damage Mod</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="modal-buttons">
+      <button id="addRowBtn">Add Row</button>
+      <button id="deleteRowsBtn">Delete Selected</button>
+      <button id="saveAttacksBtn">Save &amp; Close</button>
+    </div>
   </div>
 
   <script src="app.js"></script>
