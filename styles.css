@@ -1,8 +1,67 @@
-body { font-family: sans-serif; margin: 1rem; }
-#controls label { margin-right: 1rem; }
-#results { width:100%; border-collapse: collapse; margin-top:1rem; }
-#results th, #results td { border:1px solid #ccc; padding:5px; text-align:center; }
-.crit { color:red; font-weight:bold; }
-.fumble { color:gray; font-weight:bold; }
-#settingsModal { position:fixed; top:20%; left:30%; background:#fff; padding:1rem; border:1px solid #666; }
-.hidden { display:none; }
+body {
+  font-family: sans-serif;
+  margin: 1rem;
+}
+
+#controls label {
+  margin-right: 1rem;
+}
+
+#results {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+#results th,
+#results td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.crit {
+  color: red;
+  font-weight: bold;
+}
+
+.fumble {
+  color: gray;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  background: white;
+  border: 2px solid #333;
+  padding: 1rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.modal-buttons {
+  margin-top: 0.5rem;
+}
+
+.modal-buttons button {
+  margin-right: 0.5rem;
+}
+
+#editorTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#editorTable th,
+#editorTable td {
+  border: 1px solid #aaa;
+  padding: 4px;
+}
